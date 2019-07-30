@@ -18,6 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" red="0.86588508610000003" green="0.78886449089999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="5YW-zg-xln">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
@@ -54,53 +55,71 @@
         <scene sceneID="ME1-5K-Mf0">
             <objects>
                 <viewController id="d62-Jk-bcX" customClass="AddPhotoViewController" customModule="viewFinder" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4IA-e8-tRw">
+                    <view key="view" alpha="0.94999999999999996" contentMode="scaleToFill" id="4IA-e8-tRw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AR-r1-w9r">
                                 <rect key="frame" x="294" y="70" width="52" height="30"/>
-                                <state key="normal" title="Albums"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <state key="normal" title="Albums">
+                                    <color key="titleColor" red="0.19215686269999999" green="0.16078431369999999" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="photoAlbumTapped:" destination="d62-Jk-bcX" eventType="touchUpInside" id="bZe-Hl-6AK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRX-E7-rKr">
                                 <rect key="frame" x="161" y="70" width="92" height="30"/>
-                                <state key="normal" title="Photo Library"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <state key="normal" title="Photo Library">
+                                    <color key="titleColor" red="0.19215686269999999" green="0.16078431369999999" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="photoLibraryTapped:" destination="d62-Jk-bcX" eventType="touchUpInside" id="bgr-nH-8o7"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NxN-dP-slh">
-                                <rect key="frame" x="54" y="342.5" width="307" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NxN-dP-slh">
+                                <rect key="frame" x="67" y="343" width="294" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIX-hu-IkN">
                                 <rect key="frame" x="54" y="70" width="76" height="30"/>
-                                <state key="normal" title="Take Photo"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <state key="normal" title="Take Photo">
+                                    <color key="titleColor" red="0.19215686269999999" green="0.16078431369999999" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="takePhotoTapped:" destination="d62-Jk-bcX" eventType="touchUpInside" id="rBK-8C-MxF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3j-rj-EAM">
                                 <rect key="frame" x="190" y="466" width="34" height="30"/>
-                                <state key="normal" title="Save"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.19215686269999999" green="0.16078431369999999" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="savePhotoTapped:" destination="d62-Jk-bcX" eventType="touchUpInside" id="kE3-Uq-Ksn"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="il_794xN.1578113218_iu58" translatesAutoresizingMaskIntoConstraints="NO" id="45S-5G-Nk7">
                                 <rect key="frame" x="78" y="102" width="268" height="195"/>
+                                <color key="backgroundColor" red="0.86588508610000003" green="0.78886449089999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="195" id="3hX-NR-TM1"/>
                                     <constraint firstAttribute="width" constant="268" id="PhW-ZC-n2S"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.73475534745164961" green="0.60830379300510373" blue="0.86729681643132628" alpha="0.9393996147260274" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="45S-5G-Nk7" firstAttribute="firstBaseline" secondItem="fRX-E7-rKr" secondAttribute="baseline" constant="11.5" symbolType="layoutAnchor" id="HI8-UO-WDU"/>
                             <constraint firstItem="NxN-dP-slh" firstAttribute="leading" secondItem="RkO-Pn-ZY8" secondAttribute="leading" constant="54" id="HMw-Tj-KHT"/>
@@ -153,7 +172,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.86588508610000003" green="0.78886449089999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="odx-UN-gc7"/>
                     </view>
                     <connections>
