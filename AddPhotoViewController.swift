@@ -24,28 +24,11 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
     }
     
     
-    func getPhotos() {
-        
-        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
-            
-            
-            if let coreDataPhotos = try? context.fetch(Photos.fetchRequest()) as? [Photos] {
-                photos = coreDataPhotos
-                tableView.reloadData ()
-                
-            }
-        }
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        getPhotos()
-    }
-    
 
     @IBAction func takePhotoTapped(_ sender: Any) {
     imagePicker.sourceType = .camera
         present(imagePicker, animated: true, completion: nil)
-}
+    }
     
     @IBAction func photoLibraryTapped(_ sender: Any) {
         imagePicker.sourceType = .photoLibrary

@@ -15,6 +15,7 @@
 		180F9B3D22EF493900827A5B /* viewFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180F9B3C22EF493900827A5B /* viewFinderTests.swift */; };
 		180F9B4822EF493900827A5B /* viewFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180F9B4722EF493900827A5B /* viewFinderUITests.swift */; };
 		180F9B5622EF699700827A5B /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180F9B5522EF699700827A5B /* AddPhotoViewController.swift */; };
+		18D9F1C722F0882C00D2FDF9 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D9F1C622F0882C00D2FDF9 /* PhotoDetailViewController.swift */; };
 		18EC11B622EF7DFC005875DB /* PostTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC11B522EF7DFC005875DB /* PostTableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		180F9B4722EF493900827A5B /* viewFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewFinderUITests.swift; sourceTree = "<group>"; };
 		180F9B4922EF493900827A5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		180F9B5522EF699700827A5B /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = SOURCE_ROOT; };
+		18D9F1C622F0882C00D2FDF9 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		18EC11B522EF7DFC005875DB /* PostTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 				18EC11B522EF7DFC005875DB /* PostTableTableViewController.swift */,
 				180F9B2422EF493700827A5B /* AppDelegate.swift */,
 				180F9B2822EF493700827A5B /* Main.storyboard */,
+				18D9F1C622F0882C00D2FDF9 /* PhotoDetailViewController.swift */,
 				180F9B5522EF699700827A5B /* AddPhotoViewController.swift */,
 				180F9B2E22EF493800827A5B /* Assets.xcassets */,
 				180F9B3022EF493800827A5B /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 				180F9B2D22EF493700827A5B /* viewFinder.xcdatamodeld in Sources */,
 				180F9B5622EF699700827A5B /* AddPhotoViewController.swift in Sources */,
 				18EC11B622EF7DFC005875DB /* PostTableTableViewController.swift in Sources */,
+				18D9F1C722F0882C00D2FDF9 /* PhotoDetailViewController.swift in Sources */,
 				180F9B2522EF493700827A5B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
